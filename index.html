@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <h1>hello im side bar</h1>
+        </div>
+
+
+        <div class="main-container">
+
+            <!--Display Form with book info-->
+            <div class="book-card">
+                
+
+                <div class="card">
+                    
+                    <P id="book-title"> </P>
+                    <p id="book-author"> </p>
+                    <p id="book-pages"> </p>
+                </div>
+
+                <div class="card">
+                    <P>Title: </P>
+                    <p>By: </p>
+                    <p>Pages: </p>
+                </div>
+                
+
+            </div>
+
+
+
+
+            <!--plus icon-->
+
+            <div class="plus" id="plus">
+            
+                <button class="openForm" id="openForm">
+                <img src="images/plus.png" alt="" class="plus-icon" id="plus-icon">
+            </button>
+            </div>
+
+        </div>
+
+
+         <!--pop up-->
+         <div class="overlay" id="overlay"></div>
+         <div class="container-popup" id="container-popup">
+         <div class="popup" id="popup">
+            <button class="closebtn" id="closebtn">X</button>
+             <h2>Book info</h2>
+             <form class="form-popup">
+                
+                 <label for="title">Book Title:</label>
+                 <input type="text" id="title" name="title" required>
+                 
+
+                 <label for="author">Author:</label>
+                 <input type="text" id="author" name="author" required>
+                 
+                 <label for="pages">pages:</label>
+                 <input type="text" id="pages" name="pages" required>
+
+                 <button class="add-btn" id="add-btn" type="button">ADD</button>
+                
+             </form>
+         </div>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
