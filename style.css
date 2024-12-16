@@ -3,15 +3,24 @@
     padding: 0;
 }
 .container {
-border: 2px solid black;
 display: grid;
-grid-template-columns: minmax(10px, .45fr) minmax(300px, 2fr)
+grid-template-columns: minmax(10px, .45fr) minmax(300px, 2fr);
+margin: 20px;
 }
 .container div {
 }
 .side-bar {
     grid-column: 1/2;
-    background-color: aqua;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+
+
+}
+.side-bar h1 {
 
 }
 .main-container {
@@ -20,6 +29,7 @@ grid-template-columns: minmax(10px, .45fr) minmax(300px, 2fr)
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    grid-template-rows: 1fr auto;
     gap: 20px;
     align-items: center;
 
@@ -28,12 +38,13 @@ grid-template-columns: minmax(10px, .45fr) minmax(300px, 2fr)
     background-color: blanchedalmond;
     width: 200px;
     height: 200px;
-    border-left: 30px solid yellow;
+    border-left: 30px solid #fb923c;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-left: 20px;
     padding-top: 20px;border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 .card-border1 {
@@ -47,18 +58,17 @@ grid-template-columns: minmax(10px, .45fr) minmax(300px, 2fr)
 .book-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px
+   
 }
 .plus {
-    grid-column: 1/-1;
+    grid-row: 2;
     height: 200px;
     width: 200px;
-    background-color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(203, 213, 225, 0.2);
-    border-radius: 15px;
+    border-radius: 20px;
     
     
 }
@@ -87,6 +97,7 @@ cursor: pointer;
     flex-direction: column;
     gap: 10px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
   
     
