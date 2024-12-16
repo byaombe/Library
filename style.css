@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #fecdd3;
+}
 .container {
 display: grid;
 grid-template-columns: minmax(10px, .45fr) minmax(300px, 2fr);
@@ -12,16 +15,26 @@ margin: 20px;
 .side-bar {
     grid-column: 1/2;
     background-color: #fafafa;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 display: flex;
 flex-direction: column;
 gap: 20px;
 align-items: center;
+border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+height: 400px;
 
 
 }
+.sidebar-items {
+margin: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.colorO {
+color: #fb923c;
+}
 .side-bar h1 {
-
 }
 .main-container {
 
@@ -30,8 +43,9 @@ align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
     grid-template-rows: 1fr auto;
-    gap: 20px;
     align-items: center;
+    position: relative;
+    gap: 20px;
 
 }
 .card {
@@ -50,31 +64,32 @@ align-items: center;
 .card-border1 {
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
-    border-bottom: 1px solid black;
     border-radius: 20px;
 
 }
 .book-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
    
 }
 .plus {
-    grid-row: 2;
-    height: 200px;
-    width: 200px;
+    grid-row: 3;
+    height: 100px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(203, 213, 225, 0.2);
-    border-radius: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
     
     
 }
 .plus-icon {
-width: 200px;
-height: 200px;
+width: 100px;
+height: 100px;
+background-color: #fb923c;
 }
 .container-popup {
     display: none;
